@@ -2,15 +2,27 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background-color: black;
-    font-family: sans-serif;
+    font-family: "BoldFont";
+}
+
+@font-face {
+    font-family: "BoldFont";
+    src: url("./font/THEBOLDFONT\ 2022.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("./font/MontserratAlternates-Medium.otf") format("truetype");
 }
 
 img {
-    border-radius: 20px; 
+    border-radius: 50%; 
     width: 320px;
     height: 320px;
+    border: 2px solid red;
 }
 
 h1 {
@@ -21,6 +33,7 @@ h1 {
 
 p{
     color: white;
+    font-family: "Mont";
 }
 
 ul{
@@ -41,8 +54,14 @@ a {
     border-radius: 5px;
 }
 
+a:hover { 
+    background-color: white;
+    color: red;
+}
+
 footer{
     color: white;
+    font-family: "Mont";
 }
 
 .container {
